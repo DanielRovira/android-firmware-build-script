@@ -1,0 +1,6 @@
+#!/bin/bash
+### ROM CONFIG ###
+
+DEVICE="ocean"
+REPO="https://github.com/LineageOS/android.git"
+BRANCH="lineage-17.1"

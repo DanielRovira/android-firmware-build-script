@@ -1,0 +1,6 @@
+#!/bin/bash
+### ROM CONFIG ###
+
+DEVICE="ocean"
+REPO="https://github.com/AICP/platform_manifest.git"
+BRANCH="q10.0"
