@@ -1,0 +1,21 @@
+#!/bin/bash
+#### CONFIG FILE FOR ROVS SCRIPTS ####
+#Github
+GITUSER="danielroviratorres@gmail.com"
+GITNAME="Daniel"
+
+#Folders
+HD="$HOME/HD"
+GD="$HOME/gdrive"
+SCRIPTS="$HOME/scripts"
+
+# Rom names/folder
+ROM1="aicp"
+ROM2="rr"
+ROM3="lineage"
+
+# Shutdown time
+TIME="2"
+
+# Ccache size
+CSIZE="100G"
