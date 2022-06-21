@@ -1,6 +1,0 @@
-#!/bin/bash
-### ROM CONFIG ###
-
-DEVICE="ocean"
-REPO="https://github.com/ResurrectionRemix/platform_manifest.git"
-BRANCH="ten"
