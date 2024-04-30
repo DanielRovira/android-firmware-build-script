@@ -10,9 +10,9 @@ GD="$HOME/gdrive"
 SCRIPTS="$HOME/scripts"
 
 # Rom names/folder
-ROM1="aicp"
-ROM2="rr"
-ROM3="lineage"
+ROM1="lineage"
+ROM2=""
+ROM3=""
 
 # Shutdown time
 TIME="2"

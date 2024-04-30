@@ -20,7 +20,7 @@ do
 		"Disable visual effects")
 			ccsm & unity-tweak-tool
 			;;
-		"Format external diske")
+		"Format external disk")
 			sudo mkfs.ext4 -m 0 -F -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/sdb
 			;;
 		"Install Build environment")

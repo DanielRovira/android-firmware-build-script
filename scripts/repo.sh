@@ -13,7 +13,8 @@ cp $SCRIPTS/$ROM/local_manifest.xml $HD/$ROM/.repo/local_manifests/local_manifes
 cd $HD/$ROM
 git config --global user.email $GITUSER
 git config --global user.name $GITNAME
-repo init -u $REPO -b $BRANCH
+git lfs install
+repo init -u $REPO -b $BRANCH --git-lfs
 #repo init --reference=~/HD/aicp -u $REPO -b $BRANCH
 repo sync --force-sync --no-clone-bundle
 cd $HOME

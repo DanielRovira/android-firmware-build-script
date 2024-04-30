@@ -1,6 +1,6 @@
 #!/bin/bash
 ### ROM CONFIG ###
 
-DEVICE="ocean"
+DEVICE="nairo"
 REPO="https://github.com/LineageOS/android.git"
-BRANCH="lineage-17.1"
+BRANCH="lineage-21.0"

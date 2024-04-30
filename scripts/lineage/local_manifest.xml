@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+<remote  name="los"	fetch="https://github.com/LineageOS/" />
+<remote  name="sm7250"	fetch="https://github.com/moto-sm7250/" />
+<remote  name="muppets"	fetch="https://github.com/TheMuppets/" />
+<remote  name="syber"	fetch="https://github.com/SyberHexen/" />
+
+<project path="device/motorola/nairo" name="android_device_motorola_nairo" remote="sm7250" revision="lineage-21" />
+
+<project path="device/motorola/sm7250-common" name="android_device_motorola_sm7250-common" remote="sm7250" revision="lineage-21" />
+
+<project path="vendor/motorola/nairo" name="proprietary_vendor_motorola_nairo" remote="sm7250" revision="lineage-21" />
+
+<project path="vendor/motorola/sm7250-common" name="proprietary_vendor_motorola_sm7250-common" remote="sm7250" revision="lineage-21" />
+
+<project path="kernel/motorola/sm7250" name="android_kernel_motorola_sm7250" remote="sm7250" revision="lineage-21" />
+
+<!-- <project path="system/qcom" name="android_system_qcom" remote="los" revision="lineage-21" /> -->
+
+</manifest>
+

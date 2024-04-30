@@ -8,7 +8,7 @@ if [ -f "$SCRIPTS/$ROM/extra.sh" ]; then
 bash $SCRIPTS/$ROM/extra.sh
 fi
 cd $HD/$ROM
-#ccache -C
+ccache -C
 source ~/.bashrc
 export USE_CCACHE=1
 export CCACHE_DIR=$HD/.ccache
@@ -20,7 +20,8 @@ export ALLOW_MISSING_DEPENDENCIES=true
 source $HD/$ROM/build/envsetup.sh
 if [ $ROM = "lineage" ]; then 
 croot
-brunch "$ROM"_$DEVICE-userdebug
+#brunch "$ROM"_$DEVICE-userdebug
+brunch nairo
 else
 lunch "$ROM"_$DEVICE-userdebug
 mka bacon
