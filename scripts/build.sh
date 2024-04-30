@@ -4,9 +4,9 @@ source $SCRIPTS/.last
 source $SCRIPTS/.shutdown
 source $SCRIPTS/$ROM/config
 echo ""$ROM"_$DEVICE-userdebug"
-if [ -f "$SCRIPTS/$ROM/extra.sh" ]; then
-bash $SCRIPTS/$ROM/extra.sh
-fi
+# if [ -f "$SCRIPTS/$ROM/extra.sh" ]; then
+# bash $SCRIPTS/$ROM/extra.sh
+# fi
 cd $HD/$ROM
 ccache -C
 source ~/.bashrc
