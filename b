@@ -16,22 +16,22 @@ source $HOME/CONFIG
 				sudo chmod a+w "$HD"
 			fi
 ## Google Drive
-			if [ -d "$GD" ]; then
-				if [[ $(findmnt -M "$GD") ]]; then :
-				else
-				echo "Mounting Google Drive"
-				google-drive-ocamlfuse "$GD"
-				fi
-			else
-				mkdir "$GD"
-				echo "Mounting Google Drive"
-				google-drive-ocamlfuse "$GD"
-			fi
+			# if [ -d "$GD" ]; then
+			# 	if [[ $(findmnt -M "$GD") ]]; then :
+			# 	else
+			# 	echo "Mounting Google Drive"
+			# 	google-drive-ocamlfuse "$GD"
+			# 	fi
+			# else
+			# 	mkdir "$GD"
+			# 	echo "Mounting Google Drive"
+			# 	google-drive-ocamlfuse "$GD"
+			# fi
 ## ATALHO PARA SCRIPTS
-			if [ -d "$SCRIPTS" ]; then :
-			else
-			ln -s $GD/Celular/Building_from_source/scripts $SCRIPTS
-			fi
+			# if [ -d "$SCRIPTS" ]; then :
+			# else
+			# ln -s $GD/Celular/Building_from_source/scripts $SCRIPTS
+			# fi
 ## Pasta Logs
 			if [ -d "logs" ]; then :
 			else
