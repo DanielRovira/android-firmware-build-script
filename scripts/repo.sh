@@ -1,5 +1,6 @@
 #!/bin/bash
-source $HOME/CONFIG
+source $HOME/.build_temp
+source $MAIN/CONFIG
 source $SCRIPTS/.last
 source $SCRIPTS/.shutdown
 source $SCRIPTS/$ROM/config

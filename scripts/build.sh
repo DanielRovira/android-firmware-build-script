@@ -1,5 +1,6 @@
 #!/bin/bash
-source $HOME/CONFIG
+source $HOME/.build_temp
+source $MAIN/CONFIG
 source $SCRIPTS/.last
 source $SCRIPTS/.shutdown
 source $SCRIPTS/$ROM/config
@@ -29,7 +30,7 @@ fi
 mv $HD/*.zip $HD/builds
 mv $HD/$ROM/out/target/product/$DEVICE/lineage-*.zip $HD
 cp $HD/*.zip $SCRIPTS
-cp $HOME/logs/*.txt $SCRIPTS/scripts-bkp/logs
+#cp $HOME/logs/*.txt $SCRIPTS/scripts-bkp/logs
 cd $HOME
 #if [ $SHUT = "yes" ]; then 
 #sudo shutdown -h $TIME

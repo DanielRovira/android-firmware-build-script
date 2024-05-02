@@ -1,18 +1,19 @@
 #!/bin/bash
 clear
-source $HOME/CONFIG
+source CONFIG
+echo "MAIN="'"'"$MAIN"'"' > $HOME/.build_temp
 ## Pasta rom (segundo drive)
 			if [ -d "$HD" ]; then
 				if [[ $(findmnt -M "$HD") ]]; then :
 				else
 				echo "Mounting $HD"
-				sudo mount -o discard,defaults /dev/sdb "$HD"
+				sudo mount -o discard,defaults /dev/sdc "$HD"
 				sudo chmod a+w "$HD"
 				fi
 			else
 				mkdir "$HD"
 				echo "Mounting $HD"
-				sudo mount -o discard,defaults /dev/sdb "$HD"
+				sudo mount -o discard,defaults /dev/sdc "$HD"
 				sudo chmod a+w "$HD"
 			fi
 ## Google Drive

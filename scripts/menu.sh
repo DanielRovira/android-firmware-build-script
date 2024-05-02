@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
-source $HOME/CONFIG
+source $HOME/.build_temp
+source $MAIN/CONFIG
 source $SCRIPTS/.last
 source $SCRIPTS/$ROM/config
 echo $ROM
@@ -18,7 +19,7 @@ do
 			;;
 		"Build")
 			echo "SHUT="'"'"no"'"' > $SCRIPTS/.shutdown
-			#tmux new 'source $HOME/CONFIG && bash $SCRIPTS/build.sh |& tee $HOME/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt'
+			#tmux new 'source $MAIN/CONFIG && bash $SCRIPTS/build.sh |& tee $HOME/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt'
 			bash $SCRIPTS/build.sh |& tee $HOME/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt
 			;;
 		"Sync repo")

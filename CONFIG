@@ -5,9 +5,10 @@ GITUSER="danielroviratorres@gmail.com"
 GITNAME="Daniel"
 
 #Folders
+MAIN="$HOME/android-firmware-build-script"
 HD="$HOME/HD"
 GD="$HOME/gdrive"
-SCRIPTS="$HOME/scripts"
+SCRIPTS="$MAIN/scripts"
 
 # Rom names/folder
 ROM1="lineage"

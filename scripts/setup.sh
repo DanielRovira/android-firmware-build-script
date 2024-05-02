@@ -1,7 +1,8 @@
 #!/bin/bash
 # Bash Menu Script Example
 clear
-source $HOME/CONFIG
+source $HOME/.build_temp
+source $MAIN/CONFIG
 echo "Setup"
 echo "Options:"
 PS3='Please enter your choice: '
