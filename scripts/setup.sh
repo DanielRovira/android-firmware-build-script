@@ -27,7 +27,8 @@ do
 		"Install Build environment")
 			sudo apt-get update
 			sudo apt-get upgrade
-			sudo apt-get install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev lib32z-dev libc6-dev libc6-dev-i386 libgl1-mesa-dev liblz4-tool libncurses* libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libssl-dev libx11-dev libxml2 libxml2-utils lzop maven ncftp openjdk-8-jdk openjdk-8-jre pngcrush python-is-python3 rsync schedtool screen squashfs-tools tmux unzip w3m x11proto-core-dev xsltproc zip zlib1g-dev
+			#sudo apt-get install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev lib32z-dev libc6-dev libc6-dev-i386 libgl1-mesa-dev liblz4-tool libncurses* libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libssl-dev libx11-dev libxml2 libxml2-utils lzop maven ncftp openjdk-8-jdk openjdk-8-jre pngcrush python-is-python3 rsync schedtool screen squashfs-tools tmux unzip w3m x11proto-core-dev xsltproc zip zlib1g-dev
+			sudo apt-get install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev liblz4-tool libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev libwxgtk3.0-dev python-is-python3
 			sudo apt-get update
 			sudo apt-get upgrade
 			;;
