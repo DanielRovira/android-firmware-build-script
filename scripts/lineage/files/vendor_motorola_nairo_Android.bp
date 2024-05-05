@@ -12,7 +12,8 @@ android_app_import {
 	name: "MotoSignatureApp",
 	owner: "motorola",
 	apk: "proprietary/app/MotoSignatureApp/MotoSignatureApp.apk",
-	certificate: "platform",
+	preprocessed: true,
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -22,7 +23,8 @@ android_app_import {
 	name: "MotCamera2AI",
 	owner: "motorola",
 	apk: "proprietary/product/app/MotCamera2AI/MotCamera2AI.apk",
-	certificate: "platform",
+	preprocessed: true,
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
