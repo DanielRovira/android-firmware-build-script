@@ -18,7 +18,7 @@ ccache -M $CSIZE
 #make clean && make clobber
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
-#export DONT_UNCOMPRESS_PRIV_APPS_DEXS=true
+export DONT_UNCOMPRESS_PRIV_APPS_DEXS=true
 source $HD/$ROM/build/envsetup.sh
 if [ $ROM = "lineage" ]; then 
 croot
