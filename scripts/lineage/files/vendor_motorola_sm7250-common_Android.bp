@@ -145,7 +145,8 @@ android_app_import {
 	name: "TimeService",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+	preprocessed: true,
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
