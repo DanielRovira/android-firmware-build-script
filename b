@@ -7,13 +7,13 @@ echo "MAIN="'"'"$MAIN"'"' > $HOME/.build_temp
 				if [[ $(findmnt -M "$HD") ]]; then :
 				else
 				echo "Mounting $HD"
-				sudo mount -o discard,defaults /dev/sdc "$HD"
+				sudo mount -o discard,defaults /dev/sdb "$HD"
 				sudo chmod a+w "$HD"
 				fi
 			else
 				mkdir "$HD"
 				echo "Mounting $HD"
-				sudo mount -o discard,defaults /dev/sdc "$HD"
+				sudo mount -o discard,defaults /dev/sdb "$HD"
 				sudo chmod a+w "$HD"
 			fi
 ## Google Drive

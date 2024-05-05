@@ -5,11 +5,11 @@ source $SCRIPTS/.last
 source $SCRIPTS/.shutdown
 source $SCRIPTS/$ROM/config
 echo ""$ROM"_$DEVICE-userdebug"
-# if [ -f "$SCRIPTS/$ROM/extra.sh" ]; then
-# bash $SCRIPTS/$ROM/extra.sh
-# fi
+if [ -f "$SCRIPTS/$ROM/extra.sh" ]; then
+bash $SCRIPTS/$ROM/extra.sh
+fi
 cd $HD/$ROM
-ccache -C
+#ccache -C
 source ~/.bashrc
 export USE_CCACHE=1
 export CCACHE_DIR=$HD/.ccache
@@ -18,6 +18,7 @@ ccache -M $CSIZE
 #make clean && make clobber
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
+#export DONT_UNCOMPRESS_PRIV_APPS_DEXS=true
 source $HD/$ROM/build/envsetup.sh
 if [ $ROM = "lineage" ]; then 
 croot

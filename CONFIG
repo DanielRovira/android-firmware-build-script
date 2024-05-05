@@ -19,4 +19,4 @@ ROM3=""
 TIME="2"
 
 # Ccache size
-CSIZE="100G"
+CSIZE="50G"
