@@ -60,5 +60,9 @@ VENDOR_SECURITY_PATCH := 2022-09-01
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Dex
+# Don't dex preopt prebuilt apps that will be updated from Play Store
+DONT_DEXPREOPT_PREBUILTS := true
+# Don't uncompress dex files in priv apps APKs to save on space.
 DONT_UNCOMPRESS_PRIV_APPS_DEXS := true
 
