@@ -12,7 +12,7 @@ SCRIPTS="$MAIN/scripts"
 
 # Rom names/folder
 ROM1="lineage"
-ROM2=""
+ROM2="crdroid"
 ROM3=""
 
 # Shutdown time
