@@ -18,16 +18,16 @@ ccache -M $CSIZE
 #make clean && make clobber
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
-export DONT_UNCOMPRESS_PRIV_APPS_DEXS=true
+#export DONT_UNCOMPRESS_PRIV_APPS_DEXS=true
 source $HD/$ROM/build/envsetup.sh
-if [ $ROM = "lineage" ]; then 
+#if [ $ROM = "lineage" ]; then 
 croot
 #brunch "$ROM"_$DEVICE-userdebug
 brunch nairo
-else
-lunch "$ROM"_$DEVICE-userdebug
-mka bacon
-fi
+#else
+#lunch "$ROM"_$DEVICE-userdebug
+#mka bacon
+#fi
 mv $HD/*.zip $HD/builds
 mv $HD/$ROM/out/target/product/$DEVICE/lineage-*.zip $HD
 #cp $HD/*.zip $SCRIPTS
