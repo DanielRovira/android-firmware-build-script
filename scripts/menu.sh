@@ -7,7 +7,7 @@ source $SCRIPTS/$ROM/config
 echo $ROM
 echo "Options:"
 PS3='Please enter your choice: '
-options=("Build" "Clean" "Sync repo" "Return" "List options")
+options=("Build" "Clean" "Sync repo" "Return" "List options" "Remove files")
 select opt in "${options[@]}"
 do
 	case $opt in
@@ -15,7 +15,7 @@ do
 			clear
 			echo "Options:"
 			echo "1) Build	 3) Sync repo	  5) List options"
-			echo "2) Clean	 4) Return"
+			echo "2) Clean	 4) Return		  6) Remove files"
 			;;
 		"Build")
 			echo "SHUT="'"'"no"'"' > $SCRIPTS/.shutdown
@@ -24,6 +24,12 @@ do
 			;;
 		"Sync repo")
 			bash $SCRIPTS/repo.sh
+			;;
+		"Remove files")
+			rm -rf $HD/.ccache
+			rm -rf $HD/.Trash-1001
+			rm -rf $HD/$ROM
+			cd $HOME
 			;;
 		"Clean")
 			cd $HD/$ROM
