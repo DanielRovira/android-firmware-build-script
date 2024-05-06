@@ -1,0 +1,6 @@
+#!/bin/bash
+### ROM CONFIG ###
+
+DEVICE="nairo"
+REPO="https://github.com/crdroidandroid/android.git"
+BRANCH="14.0"
