@@ -1,0 +1,6 @@
+crdroid_nairo-userdebug
+mkdir: cannot create directory ‘/home/rovs/HD/crdroid/overlay/frameworks/base/core/res/res/values’: No such file or directory
+mkdir: cannot create directory ‘/home/rovs/HD/crdroid/overlay/frameworks/base/packages/SystemUI/res/values’: No such file or directory
+cp: cannot stat '/home/rovs/android-firmware-build-script/scripts/crdroid/files/Frameworks-base_config.xml': No such file or directory
+cp: cannot stat '/home/rovs/android-firmware-build-script/scripts/crdroid/files/SystemUI_config.xml': No such file or directory
+Set cache size limit to 50.0 GB
