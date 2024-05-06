@@ -30,7 +30,7 @@ mka bacon
 fi
 mv $HD/*.zip $HD/builds
 mv $HD/$ROM/out/target/product/$DEVICE/lineage-*.zip $HD
-cp $HD/*.zip $SCRIPTS
+#cp $HD/*.zip $SCRIPTS
 #cp $HOME/logs/*.txt $SCRIPTS/scripts-bkp/logs
 cd $HOME
 #if [ $SHUT = "yes" ]; then 

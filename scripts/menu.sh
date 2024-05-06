@@ -20,7 +20,7 @@ do
 		"Build")
 			echo "SHUT="'"'"no"'"' > $SCRIPTS/.shutdown
 			#tmux new 'source $MAIN/CONFIG && bash $SCRIPTS/build.sh |& tee $HOME/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt'
-			bash $SCRIPTS/build.sh |& tee $HOME/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt
+			bash $SCRIPTS/build.sh |& tee $MAIN/logs/$(date +%H.%M.%S-%d.%m)-$ROM_log.txt
 			;;
 		"Sync repo")
 			bash $SCRIPTS/repo.sh
